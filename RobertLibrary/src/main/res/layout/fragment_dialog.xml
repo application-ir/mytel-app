@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+
+        <itman.robert.tabLayout.CommonTabLayout
+            android:id="@+id/tl_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            tl:tl_iconGravity="RIGHT"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_indicator_color="#ffffff"
+            tl:tl_indicator_gravity="TOP"
+            tl:tl_textSelectColor="#2C97DE"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_underline_color="#527da3"
+            tl:tl_underline_gravity="TOP"
+            tl:tl_underline_height="4dp" />
+
+
+    </LinearLayout>
+</FrameLayout>
